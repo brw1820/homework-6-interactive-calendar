@@ -38,5 +38,9 @@
 }
 
 .card  {
-    background-color: blue;
+    background-color: lightskyblue;
+}
+
+.card-deck  {
+    margin-top: 200px;
 }
