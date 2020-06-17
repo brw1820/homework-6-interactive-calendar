@@ -30,7 +30,7 @@ $(document).ready(function () {
     $.ajax({
       url: queryURL,
       method: "GET",
-    })
+    }) 
       // We store all of the retrieved data inside of an object called "response"
       .then(function (response) {
         // Log the queryURL
@@ -43,7 +43,7 @@ $(document).ready(function () {
         $(".city").html("<h1>" + response.name + " Weather Details</h1>");
         $(".wind").text("Wind Speed: " + response.wind.speed + " MPH");
         $(".humidity").text("Humidity: " + response.main.humidity + "%");
-
+console.log(queryURL);
         // Convert the temp to fahrenheit
         var tempF = (response.main.temp - 273.15) * 1.8 + 32;
 
@@ -110,6 +110,11 @@ $(document).ready(function () {
         var forecastHumid5 = response.list[5].main.humidity;
         forecastHumidity5.append("Humidity: " + forecastHumid5 + "%")
      
+
+        forecastDate = moment().format('MMMM Do YYYY, h:mm:ss a');
+        console.log(forecastDate);
+        // $("#card1").append(forecastdate)
+
         // forecastData1.append(forecastHumidity);
         // console.log(forecastHumidity);
 
