@@ -1,0 +1,42 @@
+.navbar-brand {
+    margin-left: 35% ;
+    font-size: 50px;
+    font-display: center;
+}
+
+.input-group    {
+
+}
+
+.search_field {
+    margin-top: 10px;
+    display: inline-block;
+    border: 1px inset #ccc;
+}
+
+.search_field input {
+    border: 5px;
+    padding: 0;
+}
+
+.search_field button {
+    border: 5px;
+    background-color: lightblue;
+}
+
+.city-input {
+    background-color: lightgrey;
+}
+
+.first-column   {
+    float: left;
+    background-color: whitesmoke;
+}
+
+.weather-result {
+    background-color: white;
+}
+
+.card  {
+    background-color: blue;
+}
