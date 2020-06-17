@@ -21,10 +21,10 @@ $(document).ready(function () {
       cityName +
       "&appid=27b2cedd2dfb2b4e4198640c8d09052b";
 
-    console.log(forecastURL);
-    var cityNameArray = [];
-    localStorage.setItem(cityName, JSON.stringify(cityName));
-    console.log(localStorage.setItem(cityName, JSON.stringify(cityNameArray)));
+    // console.log(forecastURL);
+    // var cityNameArray = [];
+    // localStorage.setItem(cityName, JSON.stringify(cityName));
+    // console.log(localStorage.setItem(cityName, JSON.stringify(cityNameArray)));
     // response.coord.lat
     // Here we run our AJAX call to the OpenWeatherMap API
     $.ajax({
@@ -69,7 +69,8 @@ $(document).ready(function () {
       url: forecastURL,
       method: "GET",
     }).then(function (response) {
-      console.log(response);
+      fAPI = response;
+      
       $(".city-forecast").html(
         "<h1>" + response.name + " Weather Details</h1>"
       );
