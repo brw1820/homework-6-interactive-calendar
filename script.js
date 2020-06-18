@@ -124,7 +124,7 @@ console.log(queryURL);
       // );
       // $(".wind-forecast").text("Wind Speed: " + response.wind.speed);
       // $(".humidity-forecast").text("Humidity: " + response.main.humidity);
-
+      // $(".container-fluid").empty();
     
     });
   });
