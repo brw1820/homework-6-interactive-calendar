@@ -3,8 +3,19 @@ $(document).ready(function () {
   console.log("hello world");
   $(".time").text(moment().format('MMMM Do YYYY'));
 
+  var cityNameArray = [];
+  var localCity = localStorage.getItem("cityNameArray")
+  
+  var cityButton = $("<button>");
+  cityButton.text(cityNameArray);
+  $("#cities-list").append(cityButton);
+
+
+  $("#cities-list").on("click", function()  {
+    
+  })
+
   $("#city-location").on("click", function () {
-    // event.preventDefault();
     $(".forecast-result").empty();
     
     var cityName = $("#city-search").val();
@@ -25,12 +36,11 @@ $(document).ready(function () {
       "&units=imperial&appid=" + APIKey;
 
     
-  //   function storeL()  {
-  //   var cityNameArray = [];
-  //   localStorage.setItem("cityName", JSON.stringify(cityNameArray));
-  //   localStorage.setItem("cityName", JSON.stringify(cityName));
-  // storeL();  
-  // }
+  
+  cityNameArray.push(cityName);
+  localStorage.setItem("cityNameArray", JSON.stringify(cityNameArray));
+  
+    
   //   todoForm.addEventListener("submit", function(event) {
   //     event.preventDefault();
   //     if (todoText === "") {
