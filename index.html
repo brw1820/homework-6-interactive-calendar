@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://rawgit.com/moment/moment/2.2.1/min/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
-    <nav class="navbar navbar-dark bg-dark">
+    <nav class="navbar navbar-dark bg-dark rounded-lg">
         <span class="navbar-brand mb-0 h1">Weather Dashboard</span>
       </nav>
       <div class="container-fluid">
@@ -17,21 +20,26 @@
               <div class="col-sm-4 first-column">
          <p class="lead">Search for a City:</p>
             <input type="text" id="city-search">
-            <button data-location="city-loc" type="submit" id="city-location" ><img src="magnifying_glass.png" alt="Search" /></button>
-            <div class="cities-list"></div>
+            <button class="btn-group-vertical" data-location="city-loc" type="submit" id="city-location" ><img src="magnifying_glass.png" alt="Search" /></button>
+           <div class="cities-list"></div>
          
            
              </div>
              <div class="weather-result col-sm-8">
+            
                 <div class="city"></div>
+                 <div class="weather-icon"></div>
                 <div class='time'></div>
                 <div class="wind"></div>
                 <div class="humidity"></div>
                 <div class="tempF"></div>
                 <div class="uv-index"></div>
                 
+                
             
-                <div class="card-deck forecast-columns">
+                <div class="row forecast-result">
+                </div>
+                <!-- <div class="card-deck forecast-columns">
                     <div class="card">
                       <img class="card-img-top" src="..." alt="5-Day Forecast">
                       <div class="card-city1">
@@ -41,8 +49,8 @@
                 <div class="humidity-forecast"></div>
                 <div class="temp-forecast"></div>
                 <p class="card-text"></p>
-                      </div>
-                    </div>
+                      </div> -->
+                    <!-- </div>
                     <div class="card">
                       <img class="card-img-top" src="..." alt="5-Day Forecast">
                       <div class="card-city2">
@@ -76,7 +84,7 @@
                         </div>
                       </div>
                   </div>
-              </div>
+              </div> -->
         
         </div>
         </div>

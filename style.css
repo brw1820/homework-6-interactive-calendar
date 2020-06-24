@@ -35,12 +35,40 @@
 
 .weather-result {
     background-color: white;
+    border:10px;
+    border-style:double;
+    border-radius: 15px;
 }
 
-.card  {
+.forecast-result  {
+   
+margin-top:100px}
+
+.forecast-columns    {
+    margin:0 10px;
     background-color: lightskyblue;
+    border-radius: 15px; 
+}
+.card-deck  {
+    margin-top: 100px;
 }
 
-.card-deck  {
-    margin-top: 200px;
+#city-location  {
+    display: flex;
+align-items: center;
 }
+
+
+.red {
+    background-color: #ff6961;
+    color: white;
+  }
+  
+  .green {
+    background-color: #77dd77;
+    color: white;
+  }
+
+  .yellow   {
+      background-color: yellow;
+  }
