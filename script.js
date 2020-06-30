@@ -101,7 +101,6 @@ $(document).ready(function () {
         $(".uv-index").text("UV Index: " + response2[0].value);
         if (response2[0].value < 3){
           $(".uv-index").addClass("green");
-          // console.log here
         } else if (response2[0].value > 10){
           $(".uv-index").addClass("red");
       } else {
